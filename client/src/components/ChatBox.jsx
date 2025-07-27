@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ChatState } from "../store/ChatProvider";
 import ProfileModal from "../assets/ProfileModal";
 import GroupMod from "../assets/GroupMod";
-import SingleChat from "./singleChat";
+import SingleChat from "./SingleChat";
 
 
 function ChatBox(props) {
