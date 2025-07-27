@@ -10,7 +10,7 @@ const messageRouter = require('./routes/messageRouter')
 //cors tackled
 const cors = require('cors');
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://echo-chat1.vercel.app',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   }
 app.use(cors(corsOptions));
@@ -49,7 +49,7 @@ dbConnect().then(() => {
     const io = require("socket.io")(server,{
         pingTimeout: 60000,
         cors: {
-            origin: "http://localhost:5173",
+            origin: "https://echo-chat1.vercel.app",
         },
     });
 
