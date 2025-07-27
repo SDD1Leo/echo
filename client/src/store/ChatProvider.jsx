@@ -40,8 +40,8 @@ const ChatProvider = ({children}) => {
         }
     }
     const logoutUser = ()=>{
-        setToken("")
-        setUser("")
+        setToken(null)
+        setUser(null)
         return localStorage.removeItem("token")
     }
 
