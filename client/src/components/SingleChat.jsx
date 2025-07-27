@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { ChatState } from "../store/ChatProvider";
 import io from "socket.io-client";
 
-const ENDPOINT = `http://localhost:3000`;
+const ENDPOINT = `https://echo-server-vrbk.onrender.com`;
 var socket, setSelectedChatCompare;
 
 function SingleChat() {
